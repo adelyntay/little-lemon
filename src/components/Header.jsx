@@ -1,7 +1,9 @@
+import logo from '../images/logo.png';
+
 function Header() {
     return(
         <header>
-            <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Logo" width="30%"/>
+            <img src={logo} alt="Logo" width="180vh"/>
         </header>
     )
 }
