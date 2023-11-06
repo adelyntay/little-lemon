@@ -1,38 +1,117 @@
-.App {
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+/******************* navbar *********************/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2vw;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+nav ul li a {
+  color: #45474b;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+nav ul li a:hover {
+  color: rgba(69, 71, 75, 0.46);
+}
+
+/******************* section *********************/
+
+/* .section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} */
+
+/******************* card info *********************/
+
+.shop-card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.shop-info {
+  width: 400px;
+  margin: 5px 5px;
+  border: 2px black solid;
+  border-radius: 8px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shop-info>h6 {
+  font-size: 2.5vw;
+  color: rgb(73, 94, 87);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.shop-info>p {
+  font-size: 1.5vw;
+  color: black;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .shop-card {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .shop-info > h6 {
+    font-size: 20px;
+  }
+
+  .shop-info > p {
+    font-size: 16px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/******************* about *********************/
+
+.about {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  margin-top: 3vw;
 }
 
-.App-link {
-  color: #61dafb;
+/******************* reservation form *********************/
+
+.bookingform {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/******************* footer *********************/
+
+footer {
+  background-color: rgb(252, 245, 212);
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
+
+
+
