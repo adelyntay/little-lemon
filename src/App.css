@@ -36,82 +36,210 @@ nav ul li a:hover {
   color: rgba(69, 71, 75, 0.46);
 }
 
-/******************* section *********************/
+/******************* hero section *********************/
 
-/* .section {
-  text-align: center;
+.hero-container {
+  background-color: #495E57;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-} */
+  width: 100%;
+  height: 420px;
+  margin: 20px 0 0 0;
+}
+
+.hero-info{
+  padding-top: 3em;
+  padding-left: 9em;
+}
+
+.hero-container h1 {
+  color: #ffd979;
+  margin-bottom: 0px;
+  font-size: 3.5em;
+}
+
+.hero-container h3 {
+  color: white;
+  margin-top: 0px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+}
+
+.hero-container p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.hero-btn {
+  background-color: rgb(255, 224, 111);
+  border: none;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  margin: 15px 0 0 0;
+}
+
+.hero-btn:hover {
+  background-color: rgba(255, 233, 92, 0.8);
+}
+
+.hero-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #495E57;
+}
+
+.hero-img {
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px rgba(0,0,0,.2);
+  height: 500px;
+  margin-left: 15em;
+  margin-top: 2em;
+}
 
 /******************* card info *********************/
 
-.shop-card {
+.menu-section {
+  margin: 0 0 0 55px;
+  margin-top: 13em;
+}
+
+.menu-section > h1 {
+  color: #45474b;
+}
+
+.menu-card {
   display: grid;
   grid-template-columns: auto auto auto;
 }
 
-.shop-info {
+.menu-info {
   width: 400px;
   margin: 5px 5px;
   border: 2px black solid;
   border-radius: 8px;
-  text-align: center;
+  text-align: left;
 }
 
-.shop-info>h6 {
-  font-size: 2.5vw;
-  color: rgb(73, 94, 87);
-}
-
-.shop-info>p {
-  font-size: 1.5vw;
-  color: black;
+.menu-info>p {
+  font-size: 1vw;
+  padding-left: 5px;
 }
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
-  .shop-card {
+  .menu-card {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
-  .shop-info > h6 {
-    font-size: 20px;
-  }
-
-  .shop-info > p {
+  .menu-info > p {
     font-size: 16px;
+    padding-left: 2px;
   }
 }
 
-/******************* about *********************/
+/******************* about ********************************/
 
 .about {
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 3vw;
+  margin: 7em 1em 17em 7em
 }
 
 /******************* reservation form *********************/
 
-.bookingform {
-  display: flex;
+.bookingform{
+  display:flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.field-header {
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.booking-field {
+  padding: 10px;
+  font-size: 1em
+}
+
+.booking-field p {
+  padding: 0px;
+  margin: 2px 0 10px 0;
+  font-size: 1em;
+}
+
+.bookingform input {
+  width: 100%;
+  border: 2px solid #d4d4d4;
+  border-radius: 3px;
+  margin: 5px 0 0 0;
+  padding: 5px;
+}
+
+.custom-select {
+  width: 100%;
+  border: 2px solid #d4d4d4;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px 0 0 0;
+}
+.submit-btn {
+  background-color: rgb(73, 94, 87);
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  margin: 5px 0 0 10px;
+}
+
+.submit-btn:hover {
+  background-color: rgba(73, 94, 87, 0.46);
+}
+
+.confirm-btn {
+  background-color: rgb(73, 94, 87);
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  margin: 5px 0 0 10px;
+}
+
+.confirm-btn:hover {
+  background-color: rgba(73, 94, 87, 0.46);
 }
 
 /******************* footer *********************/
 
 footer {
   background-color: rgb(252, 245, 212);
-  text-align: left;
-  padding: 20px;
+  display: flex;
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  justify-content: space-between;
+  margin-top: 20vh;
 }
 
+.footer-logo {
+  margin: 2em 1em 0 5em
+}
+
+.footer-address {
+  margin: 1em 5em 1em 1em
+}
+
+.timing {
+  font-weight: 300;
+}
 
 
