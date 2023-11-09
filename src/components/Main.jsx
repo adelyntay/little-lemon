@@ -1,25 +1,26 @@
-import logo2 from '../images/logo2.png';
+import breakfast from '../images/breakfast.jpg';
+import toast from '../images/toast.jpg';
+import pancake from '../images/pancake.jpg';
 
 function Main() {
     return(
-        <div className="shop-card" id="shop-card">
-            <div className="shop-info">
-                <h6>Service</h6>
-                <img src={logo2} alt="chef" width="50vh"/>
-                <p>Types of garden design service that we provide </p>
+        <div className="menu-section">
+        <h1>Our Specials</h1>
+        <div className="menu-card">
+            <div className="menu-info">
+                <img src={breakfast} alt="breakfast" width="100%"/>
+                <p>Scrambled eggs, toast, bacon and seasonal greens</p>
             </div>
-            <div className="shop-info ">
-                <h6>New Arrivals</h6>
-                <img src={logo2} alt="shop-info" width="50vh"/>
-                <p>Shop indoor and outdoor plants for your home decoration</p>
+            <div className="menu-info ">
+                <img src={toast} alt="avocado toast" width="100%"/>
+                <p>Chunky avocado, tomatoes with multigrain bread</p>
             </div>
-            <div className="shop-info ">
-                <h6>Opening Hours</h6>
-                <img src={logo2} alt="shop-info" width="50vh"/>
-                <p>Closed every Monday<br/>
-                Tues - Fri: 9am - 8pm<br/>
-                Sat - Sun: 11am - 8pm</p>
+            <div className="menu-info ">
+                <img src={pancake} alt="pancake" width="100%"/>
+                <p>Pancakes topped with cream cheese
+                and our daily freshly crafted strawberry jam</p>
             </div>
+        </div>
         </div>
     )
 }
