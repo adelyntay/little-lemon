@@ -157,6 +157,7 @@ nav ul li a:hover {
   display:flex;
   flex-direction: column;
   align-items: center;
+  margin: 4em 0 0 0;
 }
 
 .field-header {
@@ -166,30 +167,75 @@ nav ul li a:hover {
 
 .booking-field {
   padding: 10px;
-  font-size: 1em
+  font-size: 1em;
 }
 
 .booking-field p {
-  padding: 0px;
-  margin: 2px 0 10px 0;
+  margin: 0 0 0 14em;
   font-size: 1em;
 }
 
 .bookingform input {
-  width: 100%;
+  width: 96%;
   border: 2px solid #d4d4d4;
   border-radius: 3px;
-  margin: 5px 0 0 0;
+  margin: 0.5em 0 0 0;
+  padding: 0.5em;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.date-header {
+  font-weight: bold;
+  color: #3d3d3d;
+  margin-right: 2em;
+}
+
+.time-header {
+  font-weight: bold;
+  color: #3d3d3d;
+  margin-right: 4em;
+}
+
+.occasion-header {
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.occasion-select {
+  width: 108%;
+  border: 2px solid #d4d4d4;
+  border-radius: 3px;
   padding: 5px;
+  margin: 0.5em 0 0 0;
+}
+
+.guest-select {
+  width: 35%;
+  border: 2px solid #d4d4d4;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 0.5em 0 0 16.8em;
+}
+
+.guest-header {
+  font-weight: bold;
+  color: #3d3d3d;
+  margin: 0 0 0 14em;
 }
 
 .custom-select {
-  width: 100%;
+  width: 105%;
   border: 2px solid #d4d4d4;
   border-radius: 3px;
   padding: 5px;
   margin: 5px 0 0 0;
 }
+
 .submit-btn {
   background-color: rgb(73, 94, 87);
   border: none;
@@ -220,6 +266,16 @@ nav ul li a:hover {
   background-color: rgba(73, 94, 87, 0.46);
 }
 
+.confirmation h1 {
+  text-align: center;
+  color: green;
+  margin: 4em 0em 1em 0em;
+}
+
+.confirmation p {
+  text-align: center;
+  margin: 2em 0em 18em 0em
+}
 /******************* footer *********************/
 
 footer {
@@ -227,7 +283,7 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 20vh;
+  margin-top: 16vh;
 }
 
 .footer-logo {
